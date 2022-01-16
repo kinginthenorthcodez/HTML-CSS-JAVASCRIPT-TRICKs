@@ -1,0 +1,120 @@
+
+
+* {
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+  .projects {
+    text-align:center;
+    font-size: 26px;
+    font-family: 'Inter', sans-serif;
+    color: #1f1e1e;
+    
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding:5px
+  }
+  
+  .card {
+    margin: 4px;
+    padding: 4px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .card-title {
+    align-self: center;
+    font-size: 26px;
+    font-family: 'Inter', sans-serif;
+    color: #fe5d4e;
+  }
+  .card-item{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-icon {
+    align-self: center;
+  }
+  .card-title-sub {
+    align-self: center;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    color: #fe5d4e;
+  }
+  .card-item-items,
+  .card-summary{
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: #00445e;
+  }
+  .card-item-items{
+    display: flex;
+    justify-content: space-around;
+  }
+  .card-summary {
+    align-content: center;
+    text-align: center;
+  }
+  .card-btn{
+    align-self: end;
+    margin: 10px;
+    padding: 0;
+    background: black;
+    border-radius: 10px;
+  }
+  .btn,a{
+       display: inline-block;
+       color: #fff; 
+       font-family: 'Inter', sans-serif;
+       margin: 2px;
+       padding: 2px;
+       background-color: black;
+       border-radius: 10px;
+         
+  }
+  
+  .card-btn:hover {
+     background: #454140;
+     transition: all ease-out 1s;
+  }
+  .projects::before{
+     content: '🚀';
+  }
+  
+  .card-title::before {
+    content: '✄';
+  }
+  .card-title-sub::before {
+    content: '✎';
+  }
+  .card-summary::before {
+    content: '✍';
+  }
+  .card-item-items li::after{
+    content: '✔';
+  }
+  .card-icon::before{
+    content: '(̶◉͛‿◉̶)'
+  }
+  
+  @media screen and (min-width: 800px){
+    .cards-container{
+      flex-direction: row;
+      flex-flow: wrap;
+    }
+    .card{
+      width: 28%;
+     
+    }
+  }
+    
