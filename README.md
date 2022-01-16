@@ -4,7 +4,7 @@
 
 > This is project about me and what i do.
 
-![screenshot](./screenshot_14.png)
+![screenshot](./Screenshot_14.png)
 
 Additional description about the project and its features.
 
