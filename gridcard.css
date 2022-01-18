@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.projects {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: brown;
+}
+
+.projects::before {
+  content: '🚀';
+}
+
+.cards-container {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    place-items: center;
+    padding: 5px;
+    gap:15px;
+}
+.card {
+    padding: 10px;
+    display: grid;
+    background-color: #263647;
+    width: 300px;
+    box-shadow: 4px 4px 4px #151e29;
+    border-radius: 8px;
+}
+
+.card-title {
+    justify-self: center;
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card-title::before {
+    content: '✄';
+}
+
+.card-item {
+    display: grid;
+    justify-items: center;
+}
+
+.card-icon > span::after {
+    content: '(̶◉͛‿◉̶)';
+}
+
+.card-title-sub {
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
+.card-title-sub::before {
+    content: '✍';
+}
+
+.card-item-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    place-self: center;
+    color: #151e29;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.card-item-items > li::before {
+    content: '✎';
+}
+
+.card-summary {
+    color: #151e29;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 5px;
+    place-self: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card-btn {
+    place-self: end;
+}
+
+.btn {
+    margin: 8px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #151e29;
+}
+.btn a {
+    color: white;
+}
+.btn:hover {
+    transition: ease-in-out 1s;
+    background-color: #263647;
+}
